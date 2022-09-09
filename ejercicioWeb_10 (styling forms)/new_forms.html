@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./new_forms.css">
+    <title>New forms</title>
+</head>
+<body>
+    <h3>linkedin</h3>
+
+    <div id="linkedin">
+        <p>Email or phone number <br>
+        <input type="email" id="input-text">
+        </p>
+        <p id="pass-p">Password (6 or more characters)<br>
+        <input type="password" id="input-text" minlength="6">
+        </p>
+        <p id="p-caption">By clicking Agree & Join, you agree to the Linkedin <b>User Agreement, Privacy Policy</b> and <b>Cookie Policy.</b></p>
+        <input type="submit" value="Agree & Join" id="agree-button">
+        <p>or</p>
+        <button id="facebook-button">Continue with Facebook</button>
+        <p>Already on Linkedin? <b>Sing In</b></p>
+    </div>
+
+    <hr> 
+
+    <h3>facebook</h3>
+
+    <div id="facebook-container">
+        <header>
+            <p id="logo-facebook"><img src="./facebook.png" alt=""></p>
+            <div id="sign-in">
+                <p>Email or Mobile <br>
+                <input type="email">
+                </p>
+                <p style="margin-left: 2%;">Password<br>
+                <input type="email"><br>
+                <span style="color: lightblue;">Forgot account?</span>
+                </p>
+                <button id="fb-signin">Sing in</button>
+            </div>
+        </header>
+        <article>
+            
+        </article>
+        <aside>
+            <h1>record</h1>
+            <p>it's quick and easy</p>
+                <div id="user-info">
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Last name"><br>
+                <input type="text" placeholder="Mobile number / email"><br>
+                <input type="password" placeholder="New password"><br>
+            </div>
+            <div id="fb-birthday">
+                <p>Birthday</p>
+                <input type="date">
+            </div>
+
+            <div id="fb-gender">
+            <p>Gender</p>
+                <div>
+                <input type="radio"> Girl
+                <input type="radio" style="margin-left: 2.5%;"> Male
+                <input type="radio" style="margin-left: 2.5%;"> Custom 
+                </div>
+            </div>
+                
+
+            <p>
+                By clicking Sing up, you agree to the <b>Terms</b>, <b>Data Policy</b> and
+                <b>Cookies Policy</b>. You can recieve SMS  notificaitions from us and stop 
+                receiving notificaitionsat any time. 
+            </p>
+            <input type="submit" value="record" id="record">
+
+
+        </aside>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+body{
+    margin: 0 auto;
+    width: 90%;
+}
+
+#titulo{
+    background: lightblue;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#menu li{
+    display: inline-block;
+    border: 1px solid black;
+    background: lightpink;
+    padding: 2%;
+    margin-inline-start: 8.7%;
+}
+
+#menu ul{
+    background: lightslategray;
+    width: 96%;
+    margin: 0% auto 0% auto;
+    padding: 2%;
+}
+#menu{
+    background: none;
+    margin: 2% 0px 2% 0px;
+}
+
+#feature{
+    border: 1px solid black;
+    background: lightyellow;
+    margin: 2% 0px 2% 0px;
+    height: 28%;
+}
+
+#columnas{
+    background: lightcoral;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#columnas p{
+    border: 1px solid black;
+    width: 30%;
+    padding: 1%;
+    
+}
+
+#columnas::after{
+    display: block;
+    content: normal;
+    clear: both;
+    
+}
+
+#footer{
+    border: 1px solid black;
+    margin-top: 2%;
+    background: lightseagreen;
+}

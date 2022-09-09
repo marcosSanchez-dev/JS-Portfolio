@@ -1,0 +1,515 @@
+body{
+    margin: 0 !important;
+    height: inherit;
+}
+
+#particles-js{
+    position: relative;
+    height: 32.7vh;
+    background-image: linear-gradient(90deg, black 0%, red 49%, black 80%, red 100%);
+    /* background: linear-gradient(90deg,red,black); */
+    animation:slidebg 6s ease-in-out infinite;
+}
+
+@keyframes slidebg {
+    to {
+      background-position:100vw;
+    }
+}
+
+#body-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    background: linear-gradient(white,black);
+    width: 100vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*___________________HEADER____________________*/
+
+header{
+    grid-row: 1;
+    grid-column: 1;
+    background: url("fotoTres.jpg") no-repeat center;
+    background-size: cover;
+    background-position: 43% -40px;
+    background-attachment: fixed;
+    height: 52vh;
+    width: 100vw;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+header h2{
+    background: rgba(0,0,0,0.5);
+    padding: 2% 0;
+    margin: 0;
+    height: auto;
+    width: 100vw;
+}
+
+header h4{
+    margin-top: 57.9%;
+    background: rgba(0,0,0,0.5);
+    padding: 2%;
+    opacity: 0.8;
+    padding: 2% 0;
+}
+
+#grid-title{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h2, h4{
+    letter-spacing: 0.5em;
+    color: white;
+    margin-bottom: 3%; 
+    padding-bottom: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    width: auto;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/*___________________CONTENT____________________*/
+
+.content{
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#particles-js{
+    height: 233.797px;
+}
+
+.content ul{
+    margin: 0;
+    position: absolute;
+}
+
+.content li{
+    text-align: center;
+    padding: 4%;
+    border-bottom:1px solid rgba(255,255,255,0.5);
+    font-size: 1em;
+    letter-spacing: 0.3em;
+    color: white;
+    opacity: 0.8;
+}
+
+.content li:hover{
+    text-shadow: 1px 1px 6px white;
+    font-size: 170%;
+}
+
+/*___________________CLICK MENU____________________*/
+
+@keyframes Gradient {
+	0%
+	{
+		background-position:0 50%
+	}
+	
+	50%
+	{
+		background-position:100% 50%
+	}
+	
+	100%
+	{
+		background-position:0 50%
+	}
+}
+
+
+#grid-menu{
+    background: url("./fotoSiete.jpg") no-repeat center;
+    background-size: 63em;
+    background-position: 0% 0em;
+    background-attachment: fixed;
+    height: 45vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#grid-menu ul{
+    color: white;
+    opacity: 0.8;
+}
+
+
+#grid-menu li{
+    font-size: 0.65em;
+    margin: 10% auto;
+    border-top: 5px solid rgba(255,255,255,0.5);
+    border-bottom: 5px solid rgba(255,255,255,0.5);
+    padding: 15%;
+    width: 11em;
+    border-radius: 0.4em;
+    box-shadow: 0 0 0.3em rgba(0,0,0,0.5);
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.);
+    letter-spacing: 0.3em;
+    cursor: pointer;
+}
+
+#grid-menu li:hover a{
+    text-shadow: 1px 1px 6px white;
+    font-size: 130%;
+    cursor: pointer;
+}
+
+#grid-menu li:hover{
+    box-shadow:0 5px 8px rgba(0,0,0,0.5);
+	background:linear-gradient(to right,black 0%,rgba(255,255,255,0.2) 100%);
+	background-size:400%;
+	animation:Gradient 3s ease-in-out infinite;
+}
+
+a{
+    color: white;
+}
+
+a:active{
+    color: greenyellow;
+}
+
+/*___________________Reveal container / Arte____________________*/
+
+#arte-block{
+    text-align: center;
+    text-transform: uppercase;
+    grid-row: 4;
+    grid-column: 1;
+    margin-bottom: 6.3%;
+    width: 100vw;
+}
+
+#arte-block h2{
+    background: black;
+    margin: 0;
+    border-top: 10px double rgba(255,255,255,0.5);
+    border-bottom: 10px double rgba(255,255,255,0.5);
+}
+
+#photo-container-one{
+    width: 100vw;
+    height: 60vh;
+    background-image: url("./fotoCinco.jpeg");
+    background-size: cover;
+    background-position: -10em -3em;
+    box-shadow: 0 0 5em rgba(0,0,0,0.5);
+    color: white;
+    /* margin-bottom: 5em; */
+}
+
+#reveal-container{
+    position: relative;
+    top: 84%;
+    margin: 0;
+    height: 8%;
+    background: black;
+    padding: 1em 1.5em;
+    text-align: center;
+    border-top: 10px double rgba(255,255,255,0.5);
+    border-bottom: 10px double rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(.48,-0.28,.41,1.4);
+}
+
+#reveal-container p{
+    position: absolute;
+    opacity: 0;
+    transform: translateY(2em);
+    line-height: 1.5;
+    transition: all 0.4s ease-out;
+    bottom: 9%;
+    right: 4%;
+}
+
+#photo-container-one:hover #reveal-container {
+    height: 12em;
+    color: black;
+    top: 46%;
+    background: rgba(255,255,255,0.5);;
+}
+
+#photo-container-one:hover span{
+    opacity: 0;
+}
+
+#photo-container-one:hover #reveal-container p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*___________________INTERACTIVE____________________*/
+
+#interactiveBlock{
+    grid-row: 5;
+    grid-column: 1;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#interactiveBlock p{
+    height: 14em;
+    display: flex;
+    align-items: center;
+}
+
+#interactiveBlock img{
+    width: 20em;
+}
+
+#interactiveBlock button{
+    width: 25%;
+    height: 45px;
+    background: rgba(255,255,255,0.5);
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+}
+
+.grey-bg{
+    background: rgba(255,255,255,0.1);
+    transition: all 1s ease-in-out;
+}
+
+
+.black-bg{
+    background: black;
+    transition: all 1s ease-in-out;
+}
+
+/* -------------------------------- BUTTON GRID -------------------------------- */
+
+#btn-container{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#span-container{
+    position: relative;
+    color: white;
+    display: inline-block;
+    letter-spacing: 0.3em;
+}
+
+#span-container svg {
+    position: absolute;
+    top: -1.4em;
+    left: -2.2em;
+    height: 8em;
+    /* border: 5px solid red; */
+}
+
+#span-container:hover{
+    cursor: pointer;
+}
+
+#span-container svg rect {
+    stroke-width: 3;
+    stroke-dasharray: 50, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
+    text-shadow: 1px 1px 2px white;
+}
+
+#span-container:hover svg rect {
+    stroke-width: 2;
+    stroke-dasharray: 100, 80;
+    stroke-dashoffset: 400;
+    
+}
+
+#span-container:hover span{
+    text-shadow: 0px 0px 2px white;
+}
+
+#span-container span{
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.3em;
+    font-weight: bold;
+    position: relative;
+    bottom: 0.4em;
+    transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+canvas{
+    width: 100vw;
+    grid-row: 6;
+    grid-column: 1;
+}
+
+/*__________________ ************ MEDIA QUERIES *************____________________*/
+
+@media screen and (min-width: 768px){
+
+/*___________________HEADER____________________*/
+    header h4{
+        margin-top: 31.5%;
+        background: rgba(0,0,0,0.5);
+        padding: 2%;
+        opacity: 0.8;
+    }
+
+/*___________________CONTENT____________________*/
+
+    #particles-js{
+        height: 45vh;
+        width: 100vw;
+    }
+
+    #grid-menu{
+        /* background: url("./fotoSiete.jpg") no-repeat center; */
+        background-size: 104em;
+        background-position: -0% 0em;
+        background-attachment: fixed;
+        height: 45vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .content li{
+        font-size: 1.1em;
+    }
+    #grid-menu li{
+        font-size: 0.9em;
+        padding: 10%;
+    }
+    #arte-block h2{
+        padding: 3%;
+    }
+/*___________ INTERACTIVE _____________*/
+    #interactiveBlock img{
+        width: 30em;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+/*___________________HEADER____________________*/
+    header h4{
+        margin-top: 23.5%;
+        background: rgba(0,0,0,0.5);
+        padding: 3.4% 0;
+        opacity: 0.8;
+    }
+
+    h2,h4{
+        padding-right: 0 !important;
+      
+    }
+/*___________________CONTENT____________________*/
+
+    .content li{
+        font-size: 1.5em;
+    }
+    
+    #grid-menu{
+        /* background: url("./fotoSiete.jpg") no-repeat center; */
+        background-size: 220%;
+        background-position: -0% 0em;
+        background-attachment: fixed;
+        height: 45vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    #grid-menu li{
+        font-size: 1em;
+        padding: 10% 17%;
+        margin: 15%;
+        position: relative;
+        right: 2.8em;
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+    header h4{
+        margin-top: 32.5%;
+        background: rgba(0,0,0,0.5);
+        padding: 2%;
+        opacity: 0.8;
+    }
+
+    header h2{
+        padding: 1%;
+    }
+
+    #grid-menu{
+        /* background: url("./fotoSiete.jpg") no-repeat center; */
+        background-size: 218%;
+        background-position: 0em 0em;
+        background-attachment: fixed;
+        height: 45vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    #grid-menu li{
+        font-size: 1em;
+        padding: 10% 57%;
+        margin: 15%;
+        position: relative;
+        right: 6.8em;
+    }
+
+    #photo-container-one{
+        width: 100vw;
+        height: 60vh;
+        background-image: url("./fotoCinco.jpeg");
+        background-size: 70%;
+        background-position: center -8em;
+        box-shadow: 0 0 5em rgba(0,0,0,0.5);
+        color: white;
+        /* margin-bottom: 5em; */
+    }
+
+    #reveal-container p{
+        font-size: 1.4em;
+    }
+}
+

@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID.com</title>
+</head>
+<body>
+    <div id="body-container">
+        <header>
+            <div id="grid-title">
+                <h2>GRID</h2>
+                <h4>Multimedia artist</h4>
+            </div>
+            <div class="parallax"></div>
+        </header>
+
+        <div class="content" id='particles-js'>
+            <!-- <div id='particles-js'></div> -->
+            <ul>
+                <li>Compositor de música electrónica</li>
+                <li>Artista visual</li>
+                <li>Futurologo</li>
+                <li>Luz, sonido e inmersión</li>
+            </ul>
+        </div>
+        <div id="grid-menu">
+            <ul>
+                <li><a href="#arte-block">Arte</a></li>
+                <li><a href="">Soundtracks</a></li>
+                <li><a href="">Donar $</a></li>
+                <li><a href="">Spotify</a></li>
+            </ul>
+        </div>
+        <div id="arte-block">
+            <h2>Arte</h2>
+            <div id="photo-container-one">
+                <div id="reveal-container"> 
+                    <span style="font-size: 1.4em;">¿Quien es GRID?</span>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Vitae iusto soluta perspiciatis minima accusantium! Pariatur 
+                        unde veniam nemo? Quisquam aliquid provident ipsum accusantium 
+                        esse sapiente in beatae, voluptates velit dolores.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="interactiveBlock" class="black-bg grey-bg">
+            <p><img src="" alt="" id="galleryJS"></p>
+            <div id="btn-container">
+                <span id="span-container">
+                    <svg width="277" height="62">
+                        <defs>
+                            <linearGradient id="grad1">
+                                <stop offset="0%" stop-color="white"/>
+                                <stop offset="100%" stop-color="white" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="8" y="10" rx="5" fill="none" stroke="url(#grad1)" width="190" height="35"></rect>
+                    </svg>
+                    <span>Next photo</span>
+                </span>
+            </div>
+            <canvas></canvas>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

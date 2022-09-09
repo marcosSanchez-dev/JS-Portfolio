@@ -1,0 +1,128 @@
+h1{
+    background: lightgreen;
+}
+
+/* ------- float side by side--------- */
+
+#float-side p{
+    width: 200px;
+    float: left;
+    padding: 5px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+#float-side::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* ------- float side by side--------- */
+
+#clear-float p{
+    border: 1px solid black;
+    width: 200px;
+    float: left;
+    clear: left;
+}
+
+#clear-float p:first-of-type{
+    background: lightgoldenrodyellow;
+}
+
+#clear-float::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* ------- z-index: #;--------- */
+
+div[class^="color"]{
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.color-rojo{
+    background: red;
+    z-index: 1;
+}
+.color-verde{
+    background: green;
+    bottom: 40px;
+    left: 40px;
+}
+.color-azul{
+    background: blue;
+    bottom: 80px;
+    left: 80px;
+    z-index: 1;
+}
+.color-rosa{
+    background: pink;
+    bottom: 120px;
+    left: 120px;
+}
+/* ------- float: ;--------- */
+
+#float-ejemplo blockquote{
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    padding: 5px;
+    background: lightsalmon;
+    width: fit-content;
+    height: 130px;
+    float: right;
+}
+
+#float-ejemplo p{
+    text-align: justify;
+}
+
+#float-ejemplo h2{
+    background: lightcyan;
+}
+
+
+/* ------- position:relative --------- */
+
+#main-relative p{
+    width: 450px;
+}
+
+#ejemplo-relative{
+    position: relative;
+    background: lightpink;
+    left: 250px;
+    top: 50px;
+}
+
+/* ------- position:absolute --------- */
+
+#main-absolute p{
+    width: 450px;
+}
+
+#ejemplo-absolute{
+    background: lightskyblue;
+    position: absolute;
+    left: 450px;
+    
+}
+
+/* ------- position:fixed --------- */
+
+#main-fixed p{
+    width: 450px;
+}
+
+#ejemplo-fixed{
+    background: lightslategray;
+    position: fixed;
+    left: 480px;
+    bottom: 100px;
+}
+
