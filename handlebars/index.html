@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlebars</title>
+    <link rel="stylesheet" href="./style.css" type='text/css'>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script id='templateHB' type='text/x-handlebars-template'>
+        {{#if boolean}}
+            {{#each algo}}
+                <p>Hola {{this}}</p>
+            {{/each}}
+        {{else}}
+            {{#each algos}}
+                <p>Hola {{this}}</p>
+            {{/each}}
+        {{/if}}
+    </script>
+</head>
+<body>
+    <div id='container'>
+
+    </div>
+    <script src="./main.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    color: seashell;
+    background-color: black;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}   
+/*HEADER NAV & LOGO*/
+#logo{
+    width: 9rem;
+    margin: 0.6rem 1rem;
+}
+a{
+    text-decoration: none;
+    color: seashell;
+}
+li{
+    list-style: none;
+    margin-right: 1rem;
+    border-bottom: 1px solid seashell;;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+}
+/*OUR MISSION CONTAINER*/
+.mission-container{
+    background-image: url(./fotos/img-mission-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90vw;
+    margin: 0 auto;
+}
+.our-mission{
+    background-color: black;
+    color:white;
+    width:100%;
+    padding: 2%;
+}
+/*TEA MONTH SECTION*/
+.tea-month{
+    margin: 4% auto;
+    text-align: center;
+    line-height: 1.7;
+    width: 90vw;
+}
+
+/*GALERIA*/
+figure[class*='box']{
+    display: flex;
+    flex-direction: column;
+    margin: 1%
+}
+figure[class*='box'] img{
+    width: 15rem;
+    margin: 0 auto;
+}
+.gallery{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*LOCATIONS CONTAINER*/
+.locations-container{
+    background-image: url(./fotos/img-locations-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.location-container{
+    display: flex;
+}
+
+section[class*='location']{
+    width: 16rem;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:2% 2%;
+    background-color: black;
+    line-height: 3;
+}
+/*CONTACT CONTAINER*/
+.contact{
+    text-align: center;
+    line-height: 2.5;
+    width: 90vw;
+    margin: 0 auto;
+}
+/*FOOTER*/
+footer{
+    padding: 2% 0;
+    width: 90vw;
+    margin: 0 auto;
+}
