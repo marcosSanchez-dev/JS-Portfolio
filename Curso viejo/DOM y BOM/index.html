@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <script type="text/javascript" src="bom.js"></script>
+        <meta charset="utf-8">
+        <title>Udemy HTML</title>
+        <style>
+            body{
+                background: -webkit-gradient(linear, left top, left bottom, from(#A8DEE0), to(#F9E2AE));
+            }
+
+            #identificador{
+            width: 15em;
+            height: 2em;
+            /*background: rgb(0,255,0);*/
+            }
+            .clase{
+            position: relative;
+            animation: 2s 1;
+            }
+            @keyframes mymove {
+            from {left: 0px;}
+            to {left: 200px;}
+            }
+        </style>
+    
+    </head>
+
+    <body>
+        <p>
+            <button id="boton">Presioname</button>
+            <form>
+                <input type="text" name="nombre" id="campo_nombre"/>
+            </form>
+            <button id="stop">Stop</button>
+            <button id="start">Start</button>
+        </p>
+            <br>
+        <div id="identificador" class="clase" >primer div con ID </div>
+        <hr>
+        <div class="amarillo"> Segundo Div </div>
+        <div class="rojo"> Tercer Div </div>
+        <div class="rojo"> Cuarto Div </div>
+        
+        <section id="miSeccion">
+
+            <hr>
+        </section>
+         
+        
+    </body>
+
+</html>

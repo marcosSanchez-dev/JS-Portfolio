@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: cover;
+}
+
+#container{
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*Botones*/
+
+h3[id]{
+    font-size: 1.4em;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    width: 8em;
+    position: absolute;
+}
+
+h3[id]:hover{
+    text-shadow: 1px 1px 5px white;
+}
+
+#newGame{
+    margin: 0 43.3%;
+    top: 20%;
+}
+
+#rollDice{
+    margin: 0 42.1%;
+    top: 60%;
+}
+
+#hold{
+    margin: 0 46.1%;
+    top: 65%;
+}
+
+/*PARA LOS DOS JUGADORES*/
+
+div[class^="player"]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5em;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/*JUGADOR ACTIVO*/
+.active{
+    background: rgba(255, 255, 255, 0.5) !important;
+}
+.active p:nth-child(1)::after{
+    content: '\2022';
+    color: #eb4d4d;
+    padding-left: 3%;
+}
+
+/*AMBOS JUGADORES 0*/
+div[class^='global'] p:nth-child(1){
+    width: 20vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+div[class^='global'] p:nth-child(2){
+    color: #eb4d4d;
+    font-size: 2em;
+    margin-top: 5%;
+}
+
+/*JUGADOR 0*/
+
+.player0box{
+    grid-row: 2;
+    grid-column: 1;
+    border: 1px solid white;
+    height: 60vh;
+    margin-left: 5%;
+}
+
+/*JUGADOR 1*/
+
+.player1box{
+    grid-row: 2;
+    grid-column: 2;
+    border: 1px solid white;
+    height: 60vh;
+    margin-right: 5%;
+}
+
+/*SELF SCORE*/
+
+div[class^='self']{
+    padding: 0 8%;
+    background: #eb4d4d;
+}
+
+div[class^='self'] p:first-child{
+    font-size: 0.4em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+div[class^='self'] p:last-child{
+   margin-top: 7%;
+   padding-bottom: 20%;
+   margin-bottom: 0%;
+   color: white;
+}
+
+/*DADO*/
+#dice{
+    position: absolute;
+    width: 15vw;
+    left: 42vw;
+    top: 27vh;
+}
