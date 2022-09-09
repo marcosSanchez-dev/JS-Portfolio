@@ -1,0 +1,131 @@
+#dark-container{
+    background:#000;
+    width: auto;
+    height: 6em;
+}
+ul{
+    width: auto;
+    height: 6em;
+    padding: 1%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:#212121;
+	box-shadow:0 0 8px rgba(0,0,0,0.10)
+}
+
+ul li:hover{
+    cursor: pointer;
+}
+
+ul li{
+    display: flex;
+    align-items: center;
+    height: 3em;
+    width: auto;
+    padding: 1%;
+    border: 1px solid white;
+    border-radius:0.4em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.btn-gradient
+{
+	color:rgba(255,255,255,0.54);
+}
+
+#dark-container li:hover span{
+    color:#FFF;
+}
+
+/*________hover________*/
+
+#facebook:hover{
+	box-shadow:0 5px 8px rgba(26,35,126,0.50);
+	background:linear-gradient(to right,#3949AB 0%,#2196F3 100%);
+	background-size:400%;
+	animation:Gradient 1s ease infinite;
+}
+
+#twitter:hover{
+	box-shadow:0 5px 8px rgba(33,150,243,0.50);
+	background:linear-gradient(to right,#00BCD4 0%,#2196F3 100%);
+	background-size:400%;
+	animation:Gradient 1s ease infinite
+}
+
+#instagram:hover
+{
+	box-shadow:0 5px 8px rgba(63,81,181,0.50);
+	background:linear-gradient(to right,#FFC107 0%,#F50057 50%,#3F51B5 100%);
+	background-size:400%;
+	animation:Gradient 5s ease infinite
+}
+
+#google:hover{
+	box-shadow:0 5px 8px rgba(244,67,54,0.50);
+	background:linear-gradient(to right,#F44336 0%,#FF1744 100%);
+	background-size:400%;
+	animation:Gradient 1s ease infinite
+}
+
+#linkedin:hover{
+	box-shadow:0 5px 8px rgba(3,169,244,0.50);
+	background:linear-gradient(to right,#0288D1 0%,#2196F3 100%);
+	background-size:400%;
+	animation:Gradient 1s ease infinite
+}
+
+#github:hover{
+	box-shadow:0 5px 8px rgba(0,0,0,0.50);
+	background:linear-gradient(to right,#ECEFF1 0%,#B0BEC5 100%);
+	background-size:400%;
+	animation:Gradient 1s ease infinite
+}
+
+#github:hover span{
+    color:rgba(33,33,33,1) !important;
+}
+
+#codepen:hover{
+	box-shadow:0 5px 8px rgba(0,0,0,0.50);
+	background:linear-gradient(to right,#000 0%,#212121 100%);
+	background-size:400%;
+	animation:Gradient 1s ease infinite
+}
+
+#gmail:hover{
+	box-shadow:0 5px 8px rgba(244,67,54,0.50);
+	background:linear-gradient(to right,#D50000 0%,#FF1744 100%);
+	background-size:400%;
+	animation:Gradient 1s ease infinite
+}
+
+#skype:hover{
+	box-shadow:0 5px 8px rgba(3,169,244,0.50);
+	background:linear-gradient(to right,#039BE5 0%,#29B6F6 100%);
+	background-size:400%;
+	animation:Gradient 1s ease infinite
+}
+
+/*________ANIMATION________*/
+
+@-webkit-keyframes Gradient {
+	0%
+	{
+		background-position:0 50%
+	}
+	
+	50%
+	{
+		background-position:100% 50%
+	}
+	
+	100%
+	{
+		background-position:0 50%
+	}
+}
+

@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./flex.css">
+    <title>Flexbox</title>
+</head>
+<body>
+    <h3>flex-direction: column-reverse / column;</h3>
+    <div id="column-container">
+        <div class="box-one">1</div>
+        <div class="box-two">2</div>
+        <div class="box-three">3</div>
+    </div>
+
+    <h3>flex-direction: row-reverse / row;</h3>
+    <div id="row-container">
+        <div class="box-one">1</div>
+        <div class="box-two">2</div>
+        <div class="box-three">3</div>
+    </div>
+
+    <h3>justify-content: flex-end / flex-start;</h3>
+    <div id="flex-start">
+        <div class="box-one">1</div>
+        <div class="box-two">2</div>
+        <div class="box-three">3</div>
+    </div>
+
+    <h3>justify-content: space-between;</h3>
+    <div id="space-between">
+        <div class="box-one">1</div>
+        <div class="box-two">2</div>
+        <div class="box-three">3</div>
+    </div>
+
+    <h3>justify-content: space-around;</h3>
+    <div id="space-around">
+        <div class="box-one">1</div>
+        <div class="box-two">2</div>
+        <div class="box-three">3</div>
+    </div>
+
+    <h3>justify-content: center;</h3>
+    <div id="justify-center">
+        <div class="box-one">1</div>
+        <div class="box-two">2</div>
+        <div class="box-three">3</div>
+    </div>
+
+    <h3>align-items: center;</h3>
+    <div id="align-center">
+        <div class="box-one" style="height: 35px;">1</div>
+        <div class="box-two">2</div>
+        <div class="box-three" style="height: 60px;">3</div>
+    </div>
+
+    <h3>align-items: stretch; ---- (height:auto)</h3>
+    <div id="align-stretch">
+        <div class="box-one" style="height: auto;">1</div>
+        <div class="box-two" style="height: auto;">2</div>
+        <div class="box-three" style="height: auto;">3</div>
+    </div>
+
+    <h3>align-items: baseline; ----- (con contenido)</h3>
+    <div id="align-baseline">
+        <div class="box-one" style="height: 35px; padding-top: 20px;">1</div>
+        <div class="box-two">2</div>
+        <div class="box-three" style="height: 60px; padding-top: 35px;"">3</div>
+    </div>
+
+    <h3>align-items: baseline; ----- (sin contenido)</h3>
+    <div id="align-baseline">
+        <div class="box-one" style="height: 35px; border-bottom: 5px dashed black;"></div>
+        <div class="box-two" style="border-bottom: 5px dashed black"></div>
+        <div class="box-three" style="height: 60px;border-bottom: 5px dashed black"></div>
+    </div>
+
+    <h3>align-self: flex-end; ----- (alinea items por separado)</h3>
+    <div id="align-self">
+        <div class="box-one"></div>
+        <div class="box-two"></div>
+        <div class="box-three"></div>
+    </div>
+
+    <h3>flex-grow: 1; ----- (crece y se ajusta a la porcion del espacio disponible)</h3>
+    <div id="flex-grow">
+        <div class="box-one" style='height: auto;'>flex-grow:0</div>
+        <div class="box-two" style='height: auto;'>flex-grow:1</div>
+        <div class="box-three" style='height: auto;'>flex-grow:2</div>
+    </div>
+
+    <h3>flex-shrink: 1; ----- (en que porcion encoje su tamaño)</h3>
+    <div id="flex-shrink">
+        <div class="box-one" style='height: auto;'>flex-shrink:0</div>
+        <div class="box-two" style='height: auto;'>flex-shrink:1</div>
+        <div class="box-three" style='height: auto;'>flex-shrink:2</div>
+    </div>
+
+    <h3>flex-basis: 200px; ----- (ajusta el width del flex-item)</h3>
+    <div id="flex-basis">
+        <div class="box-one" style='height: auto;'>flex-basis:200px</div>
+        <div class="box-two" style='height: auto;'>flex-basis:200px</div>
+        <div class="box-three" style='height: auto;'>flex-basis:200px</div>
+    </div>
+
+    <h3>flex-wrap: wrap; ----- (si un bloque no cabe en el contenedor, lo manda a la siguiente linea)</h3>
+    <div id="flex-wrap">
+        <div class="box-one" style='height: auto;'>1</div>
+        <div class="box-two" style='height: auto;'>2</div>
+        <div class="box-three" style='height: auto;'>3</div>
+    </div>
+
+    <h3>flex-wrap: wrap-reverse;</h3>
+    <div id="flex-wrap-reverse">
+        <div class="box-one" style='height: auto;'>1</div>
+        <div class="box-two" style='height: auto;'>2</div>
+        <div class="box-three" style='height: auto;'>3</div>
+    </div>
+
+    <h3>align-content: center / space-around / space-between / flex-start / flex-end; (container)</h3>
+    <div id="align-content">
+        <div class="box-one" >1</div>
+        <div class="box-two" >2</div>
+        <div class="box-three">3</div>
+    </div>
+</body>
+</html>

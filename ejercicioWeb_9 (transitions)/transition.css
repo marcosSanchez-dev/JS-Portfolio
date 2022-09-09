@@ -1,0 +1,192 @@
+div{
+    margin: 0px auto;
+    cursor: pointer;
+}
+/*---------- WIGGLE ----------- */
+
+#wiggle{
+    display: flex;
+    justify-content: center;
+}
+
+#wiggle button{
+    height: 3em;
+    width: 18%;
+    background: linear-gradient(180deg,#555, #333);
+    font-size: 1.5em;
+    border-radius: 0 0 0.2em 0.2em;
+    border-top: 3px solid orange;
+    color: white;
+    animation: wiggle 2s linear infinite;
+    letter-spacing: 0.1em;
+}
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+/*---------- transition: background ----------- */
+
+#transition-background{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    transition: background 0.5s linear;
+}
+
+#transition-background:hover{
+    background: cyan;
+}
+
+/*---------- transition: all ----------- */
+
+#transition-all{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    transition: all 0.5s cubic-bezier(.59,-0.26,.33,1.42);
+}
+
+#transition-all:hover{
+    background: cyan;
+    height: 200px;
+    width: 200px;
+    transform: rotate(90deg);
+}
+/*---------- transition: steps ----------- */
+
+#transition-steps{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    transition: all 1s steps(2, start);
+    
+}
+
+#transition-steps:hover{
+    background: cyan;
+    height: 200px;
+    width: 200px;
+    transform: rotate(90deg);
+}
+/*---------- multiple transitions ----------- */
+
+#span-container{
+    border: 1px solid;
+    margin: 0px auto;
+    width: 30%;
+    height: 2em;
+    text-align: center;
+    padding: 3%;
+    background: red;
+    font-size: 2em;
+    transition: width 0.8s ease-in-out, border-radius 0.8s ease-in-out;
+}
+span{
+    transition: transform 0.8s cubic-bezier(.72,-0.61,.25,1.51);
+}
+#happy{
+    position: absolute;
+    color: white;
+    transform: translate(-4em,0.4em);
+}
+#span-buy{
+    color: white;
+    position: absolute;
+    transform: translate(-2.5em,0.4em);
+}
+#exclamation{
+    position: absolute;
+    transform: translate(-3.8em,2.8em);
+    color: white;
+}
+#span-here{
+    position: absolute;
+    transform: translate(7em,0.4em);
+    color: white;
+}
+
+#span-container:hover{
+    background: indigo;
+    width: 40%;
+    border-radius: 10em;
+}
+
+#span-container:hover #exclamation{
+    transform: translate(-3.8em,0.2em);
+}
+#span-container:hover #happy{
+    transform: translate(-4em,2.8em);
+}
+#span-container:hover #span-here{
+    transform: translate(-3.14em,0.4em);
+}
+#span-container:hover #span-buy{
+    transform: translate(7em,0.4em);
+}
+
+/*---------- background reveal ----------- */
+
+#photo-container{
+    width: 40%;
+    height: 40%;
+    background-image: url("./fotoTres.JPG");
+    background-size: cover;
+    background-position: -10em -3em;
+    box-shadow: 0 0 5em rgba(0,0,0,0.5);
+    color: white;
+    margin-bottom: 5em;
+}
+
+#reveal-container{
+    position: relative;
+    top: 84%;
+    margin: 0;
+    height: 12%;
+    background: red;
+    padding: 1em 1.5em;
+}
+
+#reveal-container p{
+    opacity: 0;
+    transform: translateY(2em);
+    line-height: 1.5;
+}
+
+#photo-container:hover #reveal-container {
+    height: 12em;
+    top: 46%;
+  }
+
+#photo-container:hover #reveal-container p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#reveal-container {
+    transition: all 0.5s cubic-bezier(.48,-0.28,.41,1.4);
+  }
+  
+#reveal-container p {
+    transition: all 0.4s ease-out;
+}

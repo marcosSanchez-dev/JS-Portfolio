@@ -1,0 +1,40 @@
+body{
+    background: linear-gradient(0deg, #03040C, #313647, #737785, #575B6A);
+}
+.illuminu-logo{
+    width: 35%;
+    -webkit-filter: drop-shadow(0px 0px 3px white);
+            filter: drop-shadow(0px 0px 3px white);
+    margin: 2rem auto; 
+    left: 35%; 
+    z-index: 1; 
+    position: absolute; 
+}
+
+@media only screen and (max-width: 960px){
+    .illuminu-logo{
+        width:60%;
+        left:22%
+    }
+}
+
+.illuminu-logo path{
+    cursor: pointer;
+    stroke: white;
+    stroke-width: 2;
+    fill: transparent;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+    animation: dash 20s linear infinite;
+}
+@-webkit-keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+        fill: white;
+    }
+}
+
+.a-frame{
+    z-index: 0;
+} 
+

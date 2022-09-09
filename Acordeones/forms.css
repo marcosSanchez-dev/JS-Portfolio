@@ -1,0 +1,64 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 3px;
+}
+
+#busqueda:focus{
+    border: 5px solid red;;
+}
+
+#boton-activo:active{
+    font-size: 14px;
+    background: pink;
+}
+
+a:link{
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+a:visited{
+    color:green;
+}
+
+a:hover{
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+#lorem-uno{
+    line-height: 30px;
+    word-spacing: 2px;
+    font-weight: 13px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+#lorem img{
+    vertical-align: middle;
+    
+}
+
+#lorem-dos{
+    font-size: 20px;
+    text-indent: 80px;
+    text-shadow: 1px 1px 2px black;
+}
+
+#lorem-dos::first-letter{
+    font-size: 60px;
+}
+
+#lorem-dos::first-line{
+    color: red;
+} 
+

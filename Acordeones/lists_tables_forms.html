@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lists_tables_forms.css">
+    <link rel="stylesheet" href="./formalize_css/css/formalize.css" />
+    <title>Listas, tablas y Formas</title>
+</head>
+<body>
+    <h1>Styling forms</h1>
+    <h3>background-image / input type="text"</h3>
+    <input type="text" id="bg-image">
+
+    <h3>input type="submit"</h3>
+    <input type="submit" value="submit" id="submit-b">
+
+    <h3>Fieldset:</h3>
+    <fieldset id="fieldset-style">
+        <legend>newsletter</legend>
+        <p>Nombre: <input type="text" name="nombre" required="required" class="field-text"></p>
+        <p>Email: <input type="email" name="email" required="requiered" class="field-email"></p>
+        <p style="text-align:right;"><input type="submit" value="suscribete"></p>
+    </fieldset>
+
+
+
+    <h1>listas: </h1>
+    <h3 id="ul">list-style-type UL</h3>
+    <ul>
+        <li>list-style-type</li>
+        <li>list-style-type</li>
+        <li>list-style-type</li>
+    </ul>
+    
+    <h3 id="ol">list-style-type OL</h3>
+    <ol>
+        <li>list-style-type</li>
+        <li>list-style-type</li>
+        <li>list-style-type</li>
+    </ol>
+</body>
+    <h3>list-style-image (no funciona)</h3>
+    <ul id="list-image">
+        <li>list-style-image</li>
+        <li>list-style-image</li>
+        <li>list-style-image</li>
+    </ul>
+    <h3>list-style-position : inside</h3>
+    <ul id="position">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Est aliquid omnis sint quis, eligendi modi temporibus non 
+            nesciunt iusto, corrupti ex alias dicta aperiam at perferendis, 
+            adipisci voluptatum voluptas et!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Est aliquid omnis sint quis, eligendi modi temporibus non 
+            nesciunt iusto, corrupti ex alias dicta aperiam at perferendis, 
+            adipisci voluptatum voluptas et!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Est aliquid omnis sint quis, eligendi modi temporibus non 
+            nesciunt iusto, corrupti ex alias dicta aperiam at perferendis, 
+            adipisci voluptatum voluptas et!</li>
+    </ul>
+
+    <h1>Tablas:</h1>
+
+    <h3>Table properties</h3>
+    <table id="tabla" border="2">
+        <thead>
+            <tr>
+                <th>Author</th>
+                <th>Title</th>
+                <th>Reserve Prive</th>
+                <th>Current Bid</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>E.E. Cummings</td>
+                <td>Tulips & Chimmeys</td>
+                <td class="cifras">$2,000.00</td>
+                <td class="cifras">$2,642.50</td>
+            </tr>
+            <tr>
+                <td>E.E. Cummings</td>
+                <td>Tulips & </td>
+                <td></td>
+                <td class="cifras">$2,642.50</td>
+            </tr>
+            <tr>
+                <td>E.E. Cummings</td>
+                <td>Tulips & Chimmeys</td>
+                <td class="cifras">$2,000.00</td>
+                <td class="cifras">$2,642.50</td>
+            </tr>
+            <tr>
+                <td>E.E. Cummings</td>
+                <td>Tulips & </td>
+                <td></td>
+                <td class="cifras">$642.50</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>empty-cells: hide</h3>
+    <table id="empty" border="2">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h3>border-spacing</h3>
+    <table id="gaps" border="2">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+        </tr>
+    </table>
+
+    
+    <script src="jquery.js"></script>
+    <script src="./formalize_css/js/jquery.formalize.js"></script>
+</body>
+</html>

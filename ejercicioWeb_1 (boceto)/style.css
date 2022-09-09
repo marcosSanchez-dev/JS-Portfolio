@@ -1,0 +1,170 @@
+body{
+    background: linear-gradient(270deg,#80FFDB, #7400B8);
+    background-size: 200% 200%;
+    color: white;
+    animation: barridoTitulo 15s infinite;
+}
+@keyframes barridoTitulo{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+/* **************** TITULO PRINCIPALO  **************** */
+.titulo{
+    line-height: 160px;
+    height: 160px;
+    text-align: center;
+}
+
+
+.titulo h1{
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+    padding: 30px 220px;
+    border: 3px solid white;
+    border-radius: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.titulo::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* **************** RELOJ  **************** */
+
+#relojId{
+    font-size: 2em;
+    width: 100%;
+    position: relative;
+    text-align: right;
+}
+#relojId::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* **************** SIDE BARS **************** */
+.texto{
+    padding: 1rem;
+    position: relative;
+    padding: 3px;
+    border-radius: 60px;
+}
+
+.texto aside:nth-child(3){
+ height: 100%;
+ position: relative;
+ top:-17.5px;
+ padding-bottom: 85px;
+}
+
+.texto aside{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    word-wrap: break-word;
+    padding: 4%;
+    margin: 1%;
+    border: 1px solid white;
+    border-radius: 60px;
+    width: 39%;
+    float: left;
+    box-shadow:rgba(0,0,0,0.5) 5px 5px 10px 5px;
+}
+
+.texto::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* **************** IMAGEN DEL SIDE **************** */
+
+.geUno{
+    border: 5px groove rgba(0,0,0,0.3);
+    border-radius: 60px;
+    position: relative;
+    top: 15px;
+}
+
+/* **************** BANNER CON GRID DE ENCABEZADO  **************** */
+
+.geDos{
+    padding: 1%;
+    margin: 1%;
+    overflow: hidden;
+    max-height: 300px;
+    position: relative;
+}
+.geDos h2{
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    text-align: center;
+    text-shadow: black 3px 3px;
+    font-size: 3em;
+    margin: 0px;
+}
+.geDos img{
+    display: block;
+    margin: auto;
+}
+
+/* **************** COLUMNA DIVIDIDA EN 4  **************** */
+.divColumna{
+    width: 90%;
+    text-align: justify;
+    margin: auto;
+}
+.divColumna p{
+    column-count: 4;
+    column-gap: 30px;
+    column-rule: 5px solid #80FFDB;
+    background: rgba(0, 0, 0,0.3);
+    padding: 20px;
+}
+
+/* **************** LIGAS DE SOUNDCLOUD Y BANDCAMP  **************** */
+.lista ul{
+    float:right;
+    list-style-type: none;
+    background:rgba(0,0,0,0.3);
+    margin: 0px 10px;
+    border-radius: 60px;
+    bottom: 10px;
+    right: 10px;
+    padding: 1em;
+    position: fixed;
+    transition: display 6s;
+}
+
+.lista li{
+    border: 1px solid white;
+    width: 270px;
+    border-radius: 60px;
+    text-align: center;
+    margin: 10px;
+    padding: 0.5em;
+    position: absolute;
+    display: none;
+    background: black;
+}
+.lista ul:hover li{
+    display: block;
+    position: relative;
+}
+
+/* **************** CODIGO DE PRUEBA  **************** */
+
+#inserto{
+    text-align: center;
+    border: 1px solid white;
+    
+}
+
+#inserto h1{
+    color:white;
+}
+

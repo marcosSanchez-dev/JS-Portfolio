@@ -1,0 +1,155 @@
+h1{
+    text-transform: uppercase;
+}
+h3{
+    letter-spacing: 5px;
+    font-weight: bold ;
+    background-color: lightpink;
+}
+
+/* ----------- FIELDSET --------- */
+
+fieldset{
+    margin: 25px auto 25px auto;
+    width: 190px;
+    height: 280px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+#fieldset-style legend{
+    border: 20px outset lightskyblue;
+    border-radius: 35px;
+    padding: 10px;
+    background: lightgreen;
+}
+
+p input[class^="field"]{
+    border: 2px solid black;
+    background: lightslategrey;
+    color: whitesmoke;
+    letter-spacing: 1.5px;
+}
+
+
+/* ----------- list-style-type UL --------- */
+ul li{
+    list-style-type: circle;
+}
+
+/* ----------- list-style-type OL --------- */
+
+ol li{
+    list-style-type: upper-roman;
+}
+
+/* ----------- list-style-image (no funciona) --------- */
+
+#list-image li{
+    margin: 0;
+	padding: 36px 0 36px 49px;
+	list-style: none;
+	background-image: url("./logo_ethereum.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 50px;
+}
+
+/* ----------- list-style-position : inside --------- */
+
+#position{
+    list-style-position: inside;
+}
+
+#position li{
+    margin: 15px;
+}
+
+/* ----------- Table properties --------- */
+
+#tabla{
+    width: 900px;
+    height: 200px;
+}
+
+#tabla th{
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 6px;
+    border-top: 10px double green;
+    border-bottom: 10px double red;
+}
+
+#tabla tr:nth-child(even){
+    background-color: rgba(0,0,0,0.2);
+}
+
+#tabla td{
+    padding: 20px;
+    border: none;
+}
+
+#tabla td:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+td[class="cifras"]{
+    text-align: right;
+    letter-spacing: 5px;
+}
+
+
+/* ----------- empty-cells: hide --------- */
+
+#empty{
+    height: 200px;
+    width: 200px;
+    font-size: 40px;
+    empty-cells: hide;
+}
+
+/* ----------- border-spacing --------- */
+
+#gaps{
+    height: 200px;
+    width: 200px;
+    font-size: 40px;
+    border-spacing: 80px 20px;
+}
+
+#gaps td{
+    padding: 30px;
+    background-color: hotpink;
+}
+
+/* ----------- background-image / input type="text" --------- */
+
+#bg-image{
+    background-image: url("./logo_ethereum.png");
+    background-repeat: no-repeat;
+	background-position: left;
+	background-size: 50px;
+    border-radius: 10px;
+    border: 2px solid red;
+    height: 45px;
+    padding-left: 45px;
+    width: 325px;
+}
+
+/* ----------- input type="submit" --------- */
+
+#submit-b{
+    width: 200px;
+    height: 80px;
+    border: 3px solid black;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px grey;
+}
+
+#submit-b:hover{
+    background: hotpink;
+}
+
+#submit-b:active{
+    background: greenyellow;
+}

@@ -1,0 +1,423 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: min(1rem, 22px);     
+}
+*{
+    box-sizing: border-box;
+}
+/*HEADER Y NAV*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding: 0 4%;
+}
+/*GENERAL MARGINS*/
+.hungry-container,
+.learning-article,
+.gallery,
+.collection-container{
+    margin:0 10%;
+}
+/*--------------*/
+ul{
+    list-style-type: none;
+}
+nav li{
+    display: inline-block;
+    margin-right: 1rem;
+}
+ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ul a:hover{
+    font-size: 1.2rem;
+    color: hsl(45, 99%, 52%);
+}
+header e{
+    color: hsl(4, 35%, 54%);
+    font-weight: bold;
+}
+/*general background*/
+.hungry-container,
+.gallery figure,
+.prices{
+    background-color:hsl(60, 5%, 93%);
+}
+/*ARE YOU HUNGRY CONTAINER*/
+.hungry-container,
+.collection-container,
+.learning-article{
+    box-shadow:1px 1px 100px 1px grey;
+}
+.main-image{
+    font-size: clamp(2vw, 3vw, 4vw);
+    background-image: url(./imagenes/bg_image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 42vh;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:950px){
+    .main-image{
+        height: 36vh;
+    }
+}
+@media only screen and (min-width:1000px){
+    .main-image{
+        background-size: 60vw;
+    }
+}
+@media only screen and (min-width:1500px){
+    .main-image{
+        background-size: 45vw;
+    }
+}
+button{
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+}
+.main-image button,
+.gallery button,
+#contact button{
+    height: 3rem;
+    border-radius: 60px;
+    background-color: hsla(135, 10%, 92%,0.8);
+    letter-spacing: 0.1rem;
+    width: 11rem;
+    border: none;
+    font-weight: bold;
+}
+.main-image button:hover,
+.gallery button:hover{
+    font-size: 1.1rem;
+    width: 14rem;
+}
+/*LEARNING HOW TO COOK SECTION*/
+.main-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15%;
+    text-align: center;
+}
+.main-description h2{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+@media only screen and (max-width:760px){
+    h2{
+        margin-top: 0;
+    }
+}
+.main-description p{
+    font-size: 0.7rem;
+}
+.main-description p,
+.main-description h2{
+    line-height: 1.5;
+}
+.main-description button{
+    background-color: hsl(45, 99%, 52%);
+    border: none;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 3% 0;
+}
+.main-description button:hover{
+    font-size: 1.1rem;
+}
+.sponsors-container{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 0;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width:1065px){
+    .sponsors-container{
+        height: 8rem;
+    }
+}
+@media only screen and (max-width:548px){
+    .sponsors-container{
+        height: 20rem;
+    }
+}
+.sponsors-container figure{
+    display: flex;
+    padding: 1% 0;
+}
+
+.sponsors-container img{
+    width: 4rem;
+}
+/*LEARNING ARTICLE*/
+.learning-article{
+    display: flex;
+    flex-direction: column;
+    padding-left: 43%;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    background-image: url(./imagenes/cocos.png);
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.learning-article h2{
+    margin-bottom: 2%;
+}
+.learning-article p{
+    border-left: 20px solid hsl(45, 99%, 52%);
+    padding-left: 1rem;
+    font-size: 0.7rem;
+    margin: 5% 0;
+}
+.learning-article strong{
+    padding-left: 25px;
+    margin: 1rem 0px;
+    background-image: url(./imagenes/boton-de-play.png);
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-position: left center;
+}
+/*GALLERY*/
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    font-size: 0.7rem;
+    text-align: center;
+}
+.gallery label{
+    font-size: 1.2rem;
+    color: hsl(178, 91%, 35%);
+}
+.gallery figure{
+    width: 10rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow:1px 1px 50px 0.5px grey;
+}
+/********** START*/
+@media only screen and (max-width:632px){
+    .gallery figure{
+        width: 42vw;
+        margin: 7% 0;
+        height: 23rem;;
+
+    }
+    .gallery button{
+        margin-top:10% !important;
+    }
+}
+/********** END*/
+.gallery button{
+    display: block;
+    margin: 10% auto;
+    width: 18rem;
+}
+/********** START*/
+@media only screen and (max-width:1050px){
+    .gallery button{
+        width: 19rem;
+    }
+}
+/********** END*/
+.dish-description{
+    height: 90%;
+}
+.prices span:first-child{
+    padding-left: 25px;
+    padding-right: 20px;
+    background-image: url(./imagenes/reloj.png);
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-position: left center;
+}
+.prices span:last-child{
+    font-weight: bold;
+    font-size: 1rem;
+}
+.gallery img{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+#up-center,
+#up-right,
+#down-center,
+#down-right{
+    padding-top: 1%;
+}
+/*TOP COLLECTION CONTAINER*/
+.collection-container{
+    text-align: center;
+    background-color: hsla(135, 10%, 92%,0.8);
+    padding: 5%;
+}
+.reasons-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 5% 0;
+    flex-wrap: wrap; 
+}
+.collection-container > h4{
+    color: hsl(45, 99%, 52%);
+}
+.collection-container img{
+    width: 15%;
+    margin-bottom: 0;
+}
+.collection-container section{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5;
+    height: 28vh;
+    padding-right: 2%;
+    width: 33%;
+    min-width: 25%;
+}
+/********** START*/
+@media only screen and (max-width:909px){
+    .collection-container section{
+        width: 100%;
+    }
+    
+}
+/********** EDN*/
+section[class *= 'reason'] > figure{
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+}
+.reason-3 p{
+    position: relative;
+    bottom: 5.1%;
+}
+/*SUBMENU CAFE BISTRO*/
+
+#contact h3{
+    padding-left: 38px;
+    background-image: url(./imagenes/taza-de-cafe.png);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: left center;
+    position:relative;
+    top: 5%;
+    margin:10% 0;
+}
+/********** START*/
+@media only screen and (max-width:1039px){
+    #contact > h3{
+        margin-bottom: 15%;
+    }
+}
+@media only screen and (max-width:799px){
+    #contact > h3{
+        margin-bottom: 25%;
+    }
+}
+@media only screen and (max-width:593px){
+    #contact > h3{
+        margin-bottom: 35%;
+    }
+}
+/********** END*/
+#contact p{
+    position: relative;
+    bottom:9%;
+}
+.submenu-container{
+    display: flex;
+    height: auto;
+    margin-top: 10%;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+}
+/********** START*/
+@media only screen and (max-width:950px){
+    .submenu-container{
+        justify-content: center;
+    }
+    .submenu-container section{
+        width: 100%;
+    }
+}
+/********** END*/
+.submenu-container section{
+    width: 20%;
+    height: auto;
+    min-width: 8rem;
+}
+#contact{
+    width: 40%;
+}
+#contact button{
+    background-color: hsl(206, 9%, 34%);
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 5%;
+    width: 80%;
+}
+section li{
+    text-decoration: underline;
+    cursor: pointer;
+    line-height: 1.9;
+}
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10%;
+    font-size: 0.8rem;
+    color: white;
+    background-color: hsl(206, 9%, 34%);
+    flex-wrap: wrap;
+}
+footer img{
+    width: 2rem;
+    margin: 0 5%;
+    filter: invert(360);
+}
+@media only screen and (max-width:893px){
+    footer img{
+        width: 20%;
+    }
+}
+#footer-center{
+    text-align: center;
+}
+footer section{
+}
+section[id*='footer']{
+    width: 33%;
+}
+

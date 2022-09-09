@@ -1,0 +1,13 @@
+#map {
+    height: 90vh;
+    width: 90vh;
+  }
+  
+  /* Optional: Makes the sample page fill the window. */
+  html,
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
